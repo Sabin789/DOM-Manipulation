@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .background{
+            background-color: aquamarine;
+        }
+        .invisible{
+            display: none;
+        }
+        .link{
+            background-color: black;
+            color: white;
+        }
+        table{
+            border: 1px solid black;
+        }
+        td{
+            
+            height: 100px;
+            border: 1px solid black;
+        }
+        th{
+            border: 1px solid black;
+        }
+        img{
+            width: 100px;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>My Shop</h1>
+    <input type="text" id="titleInput" placeholder=" New Title" />
+    <button onclick="changeTitle()">Change title</button>
+
+    <button onclick="changeColour()">Change Colour</button>
+    <button onclick="changeVisibility()">Change Visibility</button>
+
+
+ <button onclick="changePriceColour()"> Change price colour</button>
+ <button onclick="changeLinks()"> Change Links</button>
+    <table style="width:100%">
+        <tr>
+            <th >Apple IPhone 8</th>
+            <th >Apple IPhone 11</th>
+            <th >Apple IPad 9.7</th>
+            <th >2018 Apple IPad</th>
+            <th >Apple Iphone 12</th>
+        </tr>
+        <tr>
+            <td><img src="./Pictures/Apple8.avif" alt="Apple IPhone 8">
+                <a href="https://www.amazon.co.uk/Apple-iPhone-64GB-Space-Renewed-Grey/dp/B0797QCXS6/ref=zg-bs_amazon-renewed_sccl_1/257-8352093-6048136?pd_rd_w=PYMy6&content-id=amzn1.sym.c3077bff-a471-42bf-a406-b93ec8e1a044&pf_rd_p=c3077bff-a471-42bf-a406-b93ec8e1a044&pf_rd_r=QF2H3N6H36BFKYGRWEW3&pd_rd_wg=gHpM3&pd_rd_r=b3434457-e694-4548-9bb7-adfe99130483&pd_rd_i=B0797QCXS6&psc=1">Apple IPhone 8</a>
+            </td>
+            <td>
+            <img src="./Pictures/Apple11.webp" alt="Apple IPhone 11">
+            <a href="https://www.amazon.co.uk/APPLE-iPhone-Black-pixels-Refurbished-Black/dp/B082P6M3HC/ref=zg-bs_amazon-renewed_sccl_2/257-8352093-6048136?pd_rd_w=PYMy6&content-id=amzn1.sym.c3077bff-a471-42bf-a406-b93ec8e1a044&pf_rd_p=c3077bff-a471-42bf-a406-b93ec8e1a044&pf_rd_r=QF2H3N6H36BFKYGRWEW3&pd_rd_wg=gHpM3&pd_rd_r=b3434457-e694-4548-9bb7-adfe99130483&pd_rd_i=B082P6M3HC&psc=1">Apple IPhone 11</a>
+             </td>
+             <td>
+            <img src="./Pictures/Apple9.7.avif" alt="Apple IPad 9.7">
+            <a href="https://www.amazon.co.uk/2018-Apple-iPad-WiFi-32GB/dp/B07DVBRVQM/ref=zg-bs_amazon-renewed_sccl_3/257-8352093-6048136?pd_rd_w=PYMy6&content-id=amzn1.sym.c3077bff-a471-42bf-a406-b93ec8e1a044&pf_rd_p=c3077bff-a471-42bf-a406-b93ec8e1a044&pf_rd_r=QF2H3N6H36BFKYGRWEW3&pd_rd_wg=gHpM3&pd_rd_r=b3434457-e694-4548-9bb7-adfe99130483&pd_rd_i=B07DVBRVQM&psc=1">Apple IPad 9.7</a>
+            </td>
+         
+            <td>
+            <img src="./Pictures/Apple2018.jpeg" alt="2018 Apple IPad">
+            <a href="https://www.amazon.co.uk/Apple-iPad-WI-FI-32GB-Refurbished/dp/B07NYS898H/ref=zg-bs_amazon-renewed_sccl_4/257-8352093-6048136?pd_rd_w=PYMy6&content-id=amzn1.sym.c3077bff-a471-42bf-a406-b93ec8e1a044&pf_rd_p=c3077bff-a471-42bf-a406-b93ec8e1a044&pf_rd_r=QF2H3N6H36BFKYGRWEW3&pd_rd_wg=gHpM3&pd_rd_r=b3434457-e694-4548-9bb7-adfe99130483&pd_rd_i=B07NYS898H&psc=1">2018 Apple IPad</a>
+          </td>
+
+
+        <td>
+            <img src="./Pictures/Apple12.webp" alt="Apple Iphone 12">
+            <a href="https://www.amazon.co.uk/Apple-iPhone-12-64GB-Blue/dp/B08PCFHLGC/ref=zg-bs_amazon-renewed_sccl_5/257-8352093-6048136?pd_rd_w=PYMy6&content-id=amzn1.sym.c3077bff-a471-42bf-a406-b93ec8e1a044&pf_rd_p=c3077bff-a471-42bf-a406-b93ec8e1a044&pf_rd_r=QF2H3N6H36BFKYGRWEW3&pd_rd_wg=gHpM3&pd_rd_r=b3434457-e694-4548-9bb7-adfe99130483&pd_rd_i=B08PCFHLGC&psc=1">Apple Iphone 12</a>
+        </td>
+        </tr>
+        <tr>
+           <td><p class="price">Price:£359</p></td>
+           <td><p class="price">Price:£490</p></td>
+            <td><p class="price">Price:£245</p></td>
+            <td><p class="price">Price:£152</p></td>
+            <td><p class="price">Price:£152</p></td>
+           
+        </tr>
+        <tr>
+            <td><p>Description</p></td>
+            <td><p>Description</p></td>
+            <td><p>Description</p></td>
+            <td><p>Description</p></td>
+            <td><p>Description</p></td>
+        </tr>
+        
+    </table>
+    <h2>Leave us a written review</h2>
+    <form action="/index.html">
+    <input type="text">
+    <button type="submit">Submit</button>
+</form>
+    <footer>
+        
+       <p id="address"> My Shop High Street 57</p>
+       <button onclick="changeAddress()">Change Address</button>
+    </footer>
+    <script>
+       let h1Node= document.querySelector("h1")
+       function changeTitle(){
+       let input= document.getElementById("titleInput")
+       let newTitle= input.value
+       h1Node.innerText= newTitle
+       }
+
+       function changeColour(){
+        colour=document.querySelector("body")
+        
+        if (colour.classList.contains('background')) {
+            colour.classList.remove('background')
+        } else {
+            colour.classList.add('background')
+        }
+       }
+      function changeAddress(){
+        let adress= document.getElementById("address")
+        address.innerText= "Fake Address"
+      }
+      function changePriceColour(){
+        let randomColour = '#' + Math.floor(Math.random() * 16777215).toString(16)
+        
+         let prices=document.querySelectorAll(".price")
+         for(i=0;i<prices.length;i++){
+            prices[i].style.color=randomColour
+         }
+         
+        
+       
+      }
+     function changeVisibility(){
+      let img=document.querySelectorAll("img")
+      for(i=0;i<img.length;i++){
+      if (img[i].classList.contains('invisible')) {
+            img[i].classList.remove('invisible')
+        } else {
+            img[i].classList.add('invisible')
+        }
+    }
+       }
+      function changeLinks(){
+        let links=document.querySelectorAll("a")
+        for(i=0;i<links.length;i++){   
+
+        if(links[i].classList.contains("link")){
+            links[i].classList.remove("link")
+        }else{
+            links[i].classList.add("link")
+        }
+    }
+      }
+
+    </script>
+</body>
+</html>
